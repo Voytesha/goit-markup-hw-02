@@ -1,47 +1,76 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --white-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --second-bcg-color: #f5f4fa;
+}
+
 body {
   font-family: "roboto", sans-serif;
+  color: var(--primary-text-color);
   background-color: #f5f5f5;
 }
+/* основний колір #212121 */
+
+/* другорядний колір #757575*/
+
+/*фон шапки #FFFFFF*/
+
+/* фон #F5F5F5*/
+
+/* другорядний фон #F5F4FA*/
+
+/* акцент #2196F3*/
+
 .logo {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
   text-decoration-line: none;
 }
 .web {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .studio {
   color: #000;
 }
-.studio-nav > a,
-.email {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #2196f3;
-  text-decoration-line: none;
+ul {
+  list-style: none;
 }
-.portfolio > a,
-.contacts > a,
-.tel {
-  font-style: normal;
+a {
+  text-decoration: none;
+}
+/*site-nav*/
+
+.site-nav .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #212121;
-  text-decoration-line: none;
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus,
+.nav-contacts .link:hover,
+.nav-contacts .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.nav-contacts .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 .hero-section {
   background-color: #2f303a;
 }
 .hero-title {
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -51,8 +80,7 @@ body {
   color: #ffffff;
 }
 .button {
-  background-color: #2196f3;
-  font-style: normal;
+  background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -62,48 +90,90 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
 }
-.benefit {
-  font-style: normal;
+
+/*Benefits*/
+.section-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--title-text-color);
 }
-.about-benefit {
-  font-style: normal;
+.benefit {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
+/*What we can and team*/
 .we-can,
 .our-team {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-color);
 }
 .team-member {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-color);
 }
 .about-member {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--primary-text-color);
+}
+
+.footer {
+    background-color: #2f303a;
+}
+
+.address {
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+
+.footer-link {
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.portfolio-buttons {
+  color: var(--title-text-color);
+  background-color: var(--second-bcg-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+}
+.portfolio-buttons.primary {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+.portfolio-buttons.other {
+  color: var(--title-text-color);
+  background-color: var(--second-bcg-color);
+}
+
+.example-title {
+    font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 0.06em;
+        color: var(--title-text-color);
+}
+.example-text {
+    font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        color: var(--primary-text-color);
 }
